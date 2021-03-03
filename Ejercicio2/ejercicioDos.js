@@ -192,7 +192,6 @@ function probarEjercicio()
 	}
 
 	promedioHabitantes = acumuladorHabitantesPaises/acumuladorCantidad;
-
 	promedioMas40 = acumuladorHabitatesMas40/acumuladorCantidad;
 
 	if (cantidadTemperaturasPares==0) 

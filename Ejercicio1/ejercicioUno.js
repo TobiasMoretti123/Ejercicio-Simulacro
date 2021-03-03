@@ -261,7 +261,6 @@ function probarEjercicio()
 		}
 	}
 
-
 	if (sumaGatoPerro == 0) 
 	{
 		document.write("<br/>f)No se ingreso ningun gato o perro");
