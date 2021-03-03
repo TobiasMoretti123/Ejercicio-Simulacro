@@ -41,6 +41,9 @@ function probarEjercicio()
 	var nombreDelDeMenosTemp;
 	var flagMenosHabitantes;
 	var flagMenosTemperatura;
+	var continenteMasHabitantes;
+	var masHabitatante;
+	var flagHabitantes;
 
 	contadorAmerica = 0;
 	contadorEuropa = 0;
@@ -56,6 +59,7 @@ function probarEjercicio()
 	acumuladorHabitatesMas40 = 0;
 	flagMenosHabitantes = true;
 	flagMenosTemperatura = true;
+	flagHabitantes = true;
 
 	for(var i=0;i<5;i++)
 	{
@@ -167,6 +171,21 @@ function probarEjercicio()
 			}
 		}
 
+		if (flagHabitantes = true) 
+		{
+			masHabitatante = cantidadIngresada;
+			continenteMasHabitantes = continenteIngresado;	
+			flagHabitantes = false;
+		}
+		else
+		{
+			if (masHabitatante<cantidadIngresada) 
+			{
+				masHabitatante = cantidadIngresada;
+				continenteMasHabitantes = continenteIngresado;	
+			}
+		}
+
 		acumuladorHabitantesPaises = acumuladorHabitantesPaises + cantidadIngresada;
 		acumuladorCantidad = contadorEuropa+contadorOceania+contadorAsia+contadorAfrica+contadorAmerica;
 
@@ -225,8 +244,5 @@ function probarEjercicio()
 	}
 
 	document.write("<br/>h)La temperatura minima ingresada es de: "+temperarutaMinimaIngresada+" Y el pais que la registro fue: "+nombreDelDeMenosTemp);
-
-	
-	
-	
+	document.write("<br/>i)El continente con mas habitantes es: "+continenteMasHabitantes);	
 }
